@@ -102,7 +102,7 @@ $( document ).ready(function() {
         $urlPrepend = "";
     }
 ?>
-<!-- Link to the API -->
+<!-- Link to the API client -->
 <script src="<?php echo $urlPrepend ?>/js/company_nameApi.js"></script>
 ```
 
