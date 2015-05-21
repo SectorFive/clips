@@ -47,11 +47,10 @@ var validatePhoneField = function(elementId) {
 
 ---
 
-#####I decided to write a jQuery image slider from scratch.  There are more efficient sliders out there but it was a good little learning opportunity.
+#####I decided to write a simple jQuery image-fader.  There are more efficient ones out there but it was a good little learning opportunity.
 
 ```javascript
-// Content Slider
-
+// Content fader
 $( document ).ready(function() {
     var slideNum = 0;
     var totalSlides = $(".slide").length;
