@@ -45,6 +45,39 @@ var validatePhoneField = function(elementId) {
 };
 ```
 
+---
+
+#####I decided to write a jQuery image slider from scratch.  There are more efficient sliders out there but it was a good little learning opportunity.
+
+```javascript
+// Content Slider
+
+$( document ).ready(function() {
+    var slideNum = 0;
+    var totalSlides = $(".slide").length;
+    $(".slide").hide();
+    $(".slide").eq(0).show();
+
+    function fadeThem() {
+        previousNum = slideNum;
+        slideNum++;
+        if (slideNum == totalSlides) {
+            console.log("Resetting slideNum because it is " + slideNum + " and totalSlides is " + totalSlides);
+            slideNum = 0;
+        }
+        $('.slide').css('z-index', "10");
+        $('.slide').eq(previousNum).css('z-index', "15");
+        $('.slide').eq(slideNum).hide().css('z-index', "20").fadeIn('slow');
+    }
+    // Timer
+    slideInterval = setInterval(function() {
+        fadeThem();
+    }, 4000);
+});
+```
+
+---
+
 #####Here is an example of how you would use the above validation.  You call the validation function and pass in the ID of the element to be validated and the message if it fails:
 ```javascript
 if (validateFieldEntered("userNameNew", "Please enter a username.") && validateUniqueName("userNameNew", "Name already taken.") && validateFieldEntered("pswdNew", "Please enter a password.") && validateSamePassword("pswdNew", "pswdNewAgain", "Passwords do not match.")) {
