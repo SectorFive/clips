@@ -50,7 +50,7 @@ var validatePhoneField = function(elementId) {
 
 #####Here is an example of how you would use the above type of validation.  You call the validation function and pass in the ID of the element to be validated and the message if it fails:
 ```javascript
-if (validateFieldEntered("userNameNew", "Please enter a username.") && validateUniqueName("userNameNew", "Name already taken.") && validateFieldEntered("pswdNew", "Please enter a password.") && validateSamePassword("pswdNew", "pswdNewAgain", "Passwords do not match.")) {
+if (validateFieldEntered("userNameNew", "Please enter a username.") && validateUniqueName("userNameNew", "This username has already been registered.") && validateFieldEntered("pswdNew", "Please enter a password.") && validateSamePassword("pswdNew", "pswdNewAgain", "Passwords do not match.")) {
    ...
 }
 ```
