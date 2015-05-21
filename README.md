@@ -1,5 +1,5 @@
 # Code Clips
-I've been asked for some examples of code I commonly do.  I mostly handle the basics - form validation, behaviors, DOM manipulation, and maintaining state with the PHP session.  I'm not ready to host a workshop at An Event Apart just yet but in each project I build I try to branch out and learn something new.
+I've been asked for some examples of code I commonly do.  I mostly handle the basics - form validation, content sliders, DOM manipulation, and maintaining state with the PHP session.  I'm not ready to host a workshop at An Event Apart just yet but in each project I build I try to branch out and learn something new.
 
 ---
 
