@@ -4,7 +4,7 @@ I've been asked for some examples of code I commonly do.  I mostly handle the ba
 ---
 
 
-#####Some examples of form validation I've written.  The first two Function Declarations display and remove warnings, and prevent duplicates.  Then the two Function Expressions perform the validation.
+#### Some examples of form validation I've written.  The first two Function Declarations display and remove warnings, and prevent duplicates.  Then the two Function Expressions perform the validation.
 ```javascript
 // Add validation warnings
 function markInvalid(fieldId, message) {
@@ -48,7 +48,7 @@ var validatePhoneField = function(elementId) {
 
 ---
 
-#####Here is an example of how you would use the above type of validation.  You call the validation function and pass in the ID of the element to be validated and the message if it fails:
+#### Here is an example of how you would use the above type of validation.  You call the validation function and pass in the ID of the element to be validated and the message if it fails:
 ```javascript
 if (validateFieldEntered("userNameNew", "Please enter a username.") && validateUniqueName("userNameNew", "This username has already been registered.") && validateFieldEntered("pswdNew", "Please enter a password.") && validateSamePassword("pswdNew", "pswdNewAgain", "Passwords do not match.")) {
    ...
@@ -58,7 +58,7 @@ if (validateFieldEntered("userNameNew", "Please enter a username.") && validateU
 ---
 
 
-#####I decided to write a simple jQuery image-fader.  There are more efficient ones out there but it was a good little learning opportunity.
+#### I decided to write a simple jQuery image-fader.  There are more efficient ones out there but it was a good little learning opportunity.
 
 ```javascript
 // Content fader
@@ -90,7 +90,7 @@ $( document ).ready(function() {
 ---
 
 
-#####Here I used PHP to append ".." to a URL if it was being viewed on my development box because the folder structure in production was different:
+#### Here I used PHP to append ".." to a URL if it was being viewed on my development box because the folder structure in production was different:
 ```php
 <?php
     // Add ".." to the src if this is on our webdev development server
@@ -109,7 +109,7 @@ $( document ).ready(function() {
 ---
 
 
-#####A typical call to the API and then populating the page with the returned data for a "Class of Service" page using HTML data-types:
+#### A typical call to the API and then populating the page with the returned data for a "Class of Service" page using HTML data-types:
 ```javascript
 function getList() {
     // Show loading text while data is retrieved
@@ -152,7 +152,7 @@ function getList() {
 
 
 
-#####A script that checks if this page was reached from a search that was performed:
+#### A script that checks if this page was reached from a search that was performed:
 ```php
 <?php if(isset($_GET['popsearchbox'])) {
     $popsearchbox = ($_GET['popsearchbox']);
@@ -174,7 +174,7 @@ function getList() {
 
 
 
-#####Using Google's GeoData to determine Longitude, Latitude and Timezone.  Uses a jQuery Local Storage plugin called jStorage:
+#### Using Google's GeoData to determine Longitude, Latitude and Timezone.  Uses a jQuery Local Storage plugin called jStorage:
 ```javascript
 function updateGeoData(address, updateTZ) {
     var geocoder = new google.maps.Geocoder();
